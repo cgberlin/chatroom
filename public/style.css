@@ -1,0 +1,22 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#messages, #server-messages {
+  border: 3px solid #00CDCD;
+  color:white;
+  background-color: #008080;
+  display:flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width:33%;
+}
+h1 {
+  text-decoration: underline;
+}

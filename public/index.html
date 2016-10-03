@@ -2,10 +2,16 @@
   <html>
       <title>Chatroom</title>
       <meta charset="utf-8">
+      <link rel = "stylesheet" href = "style.css">
       <body>
       <!-- JS -->
           <input type="text">
-          <div id="messages"></div>
+          <div id="messages">
+              <h1>Messages</h1>
+          </div>
+          <div id = 'server-messages'>
+              <h1>Server</h2>
+          </div>
           <script src="//code.jquery.com/jquery-2.1.0.js"></script>
           <script src="main.js"></script>
           <script src="/socket.io/socket.io.js"></script>

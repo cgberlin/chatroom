@@ -7,9 +7,11 @@ app.use(express.static('public'));
 
 var server = http.Server(app);
 var io = socket_io(server);
-
+var userCount = 0;
 io.on('connection', function (socket) {
     console.log('Client connected');
+    userCount++;
+    socket.broadcast.emit('server-messages', 'New Client Connected:'+ ' ' + userCount + ' ' +'total online');
 
     socket.on('message', function(message) {
         console.log('Received message:', message);
